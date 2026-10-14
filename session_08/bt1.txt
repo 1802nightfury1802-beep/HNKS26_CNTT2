@@ -12,4 +12,4 @@ Xem toàn bộ nội dung tệp:
 
 Xem 10 dòng cuối:
 
-    Get-content sever_log_800MB.log 
+    Get-content sever_log_800MB.log -Tail 10
