@@ -1,0 +1,47 @@
+  
+        Bài 4 : Tối ưu hóa Slide trình bày cho Startup 
+
+PHẦN 1: BẢNG SO SÁNH PHƯƠNG PHÁP TRÌNH BÀY
+So sánh việc "Copy bảng Excel lên Slide" và "Dùng Bar Chart có highlight" dựa trên tính thuyết phục và tốc độ hiểu của người xem:
+Tiêu chí so sánh
+Copy bảng Excel lên Slide (Death by PowerPoint)
+Dùng Biểu đồ cột (Bar Chart) có Highlight
+Tính thuyết phục 
+Thấp. Số liệu bị loãng, nhà đầu tư phải tự mò mẫm tính toán. Dễ gây nghi ngờ vì thiếu điểm nhấn chiến lược.
+Cao. Dữ liệu đã qua phân tích, nêu bật ngay đà tăng trưởng/điểm đột phá, tạo niềm tin vào năng lực quản trị.
+Tốc độ hiểu 
+Rất chậm (15–30 giây hoặc hơn). Não bộ bị quá tải nhận thức do đọc văn bản và con số thô.
+Cực nhanh (< 3 giây). Nhận diện trực quan qua chiều cao cột và màu sắc highlight, hiểu ngay thông điệp.
+Mức độ tập trung vào người nói
+Gây xao nhãng. Nhà đầu tư mải đọc bảng 50 hàng và ngưng nghe bạn nói.
+Tập trung cao. Slide làm nền hỗ trợ, nhà đầu tư vừa nhìn nhanh là hiểu và quay lại lắng nghe bạn trình bày.
+Áp dụng Nguyên tắc 1 Slide - 1 Thông điệp
+Thất bại. Chứa quá nhiều thông tin hỗn hợp (50 dòng số liệu khác nhau).
+Thành công. Tất cả chi tiết đều phụ trợ cho 1 thông điệp chính (ví dụ: Doanh thu tăng trưởng nhờ kênh X).
+
+
+
+PHẦN 2: LỰA CHỌN & ĐỀ XUẤT GIẢI PHÁP THIẾT KẾ CHO SLIDE DOANH THU
+1. Áp dụng Nguyên tắc 1 Slide - 1 Thông điệp & Assertion Title
+Không dùng tiêu đề chủ đề: Báo cáo Doanh thu Q3/2026 hay Tình hình Doanh thu.
+Sử dụng Tiêu đề kết luận (Assertion Title):
+"Doanh thu Q3 bứt phá 150%, chủ yếu đến từ kênh bán hàng B2B"
+2. Lựa chọn Loại biểu đồ (Data Visualization)
+Loại biểu đồ: Grouped Bar Chart (Biểu đồ cột gom nhóm) hoặc Stacked Bar Chart (Biểu đồ cột chồng) theo thời gian (các quý/tháng).
+Cách xử lý dữ liệu từ 50 hàng Excel:
+Gom 50 dòng chi tiết thành 3–4 nhóm chính.
+Ẩn các chi tiết nhỏ lẻ vào phụ lục  để sẵn sàng trả lời khi Q&A.
+3. Phối màu sắc chủ đạo & Kỹ thuật Highlight
+Màu chủ đạo (Neutral Color): Sử dụng màu xám trung tính (Navy/Slate Gray) cho tất cả các cột doanh thu bình thường.
+Màu nhấn (Accent Color): Sử dụng 1 màu tương phản mạnh (Đỏ cam hoặc Xanh lá tươi) để tô điểm duy nhất cho cột/kênh có mức tăng trưởng đột phá mà bạn muốn nhà đầu tư chú ý.
+Nguyên tắc: Color with purpose - chỉ dùng màu sắc để truyền tải thông tin, không dùng nhiều màu trang trí vô nghĩa.
+4. Quy tắc Font chữ (Vận dụng Rule 10/20/30)
+C cỡ Font tối thiểu (Rule 30):
+Assertion Title (Tiêu đề): 36pt - 40pt (In đậm, rõ ràng).
+Số liệu chính / Data Labels trên cột: 30pt (Cỡ font tối thiểu cho người ngồi xa nhất vẫn đọc được).
+Ghi chú phụ / Trục biểu đồ: 24pt (Tránh để font quá nhỏ dưới 24pt).
+Ứng dụng Rule 10/20/30 tổng thể:
+10 Slides: Bài thuyết trình ngắn gọn trong 10 slide chính.
+20 Minutes: Thuyết trình trong 20 phút (dành thời gian cho Q&A).
+30pt Font: Không dùng cỡ chữ nào nhỏ hơn 30pt cho nội dung quan trọng.
+
