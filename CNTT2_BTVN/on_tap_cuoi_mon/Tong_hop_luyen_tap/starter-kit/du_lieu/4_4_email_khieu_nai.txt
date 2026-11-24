@@ -1,0 +1,36 @@
+EMAIL KHIẾU NẠI CỦA KHÁN GIẢ
+
+Tôi là khán giả mua vé gói SVT trận Cúp Sao Vàng ngày 02/11/2026, đi 2 người lớn. Ban tổ chức cam kết khu khán đài có mái che nhưng trong 2 hiệp đầu chúng tôi bị xếp sang khu không mái, trời mưa và ghế ướt. Nhân viên soát vé rất nhiệt tình, tôi không có gì phàn nàn về nhân viên. Tôi đề nghị ban tổ chức giải quyết thỏa đáng.
+
+======================================================
+CHÍNH SÁCH ĐỀN BÙ CỦA BAN TỔ CHỨC CÚP SAO VÀNG
+======================================================
+
+- tran_gio: trận đấu bắt đầu trễ trên 2 giờ do ban tổ chức: tặng voucher 200.000 đồng/khách.
+- sai_khu_vuc: khán giả bị xếp sang khu vực thấp hơn quyền lợi đã cam kết: hoàn 500.000 đồng/khách cho mỗi hiệp bị ảnh hưởng.
+- nhan_vien: khiếu nại về thái độ nhân viên: tặng voucher 300.000 đồng/khách.
+- khac: chuyển bộ phận Chăm sóc khán giả xem xét, chưa đề xuất mức đền bù.
+- Tổng mức đền bù trên 1.500.000 đồng phải được Trưởng ban Chăm sóc khán giả duyệt trước khi gửi khách.
+
+======================================================
+ĐỊNH DẠNG ĐẦU RA CỦA TRẠM 1 (sinh viên viết prompt)
+======================================================
+
+Trạm 1 – đọc email, trả về chỉ một đối tượng JSON gồm đúng 4 trường:
+{"loai_su_co": một trong "tran_gio" | "sai_khu_vuc" | "nhan_vien" | "khac", "so_khach": số nguyên, "so_hiep_bi_anh_huong": số nguyên hoặc null, "tom_tat": "không quá 20 từ"}
+
+======================================================
+PROMPT TRẠM 2 (đã có sẵn, không cần viết)
+======================================================
+
+Dưới đây là kết quả phân loại khiếu nại (JSON của Trạm 1) và chính sách đền bù. Chỉ dùng chính sách trong thẻ <chinh_sach> để tính tổng mức đền bù. Trả về đúng một đối tượng JSON, không giải thích:
+{"loai_su_co": ..., "muc_den_bu": tổng số tiền (đồng) hoặc null, "can_duyet": true nếu muc_den_bu trên 1.500.000, ngược lại false}
+<ket_qua_tram_1>(JSON của Trạm 1)</ket_qua_tram_1>
+<chinh_sach>(chính sách đền bù ở trên)</chinh_sach>
+
+======================================================
+PROMPT TRẠM 3 (đã có sẵn, không cần viết)
+======================================================
+
+Bạn là nhân viên chăm sóc khán giả của Ban tổ chức Cúp Sao Vàng. Dựa trên JSON trong thẻ <ket_qua_tram_2>, viết email phản hồi khán giả: xin lỗi, nêu đúng mức đền bù trong JSON, không tự đặt mức khác, giọng điệu chân thành, chuyên nghiệp, dưới 150 từ.
+<ket_qua_tram_2>(JSON của Trạm 2)</ket_qua_tram_2>

@@ -1,0 +1,37 @@
+ĐÁP ÁN THAM KHẢO 
+[Đề bài số 02 – Chủ đề bóng đá]
+
+
+
+4.1. Bảo vệ dữ liệu và chống ảo giác (14 điểm)
+- Bốn định danh là họ tên, số điện thoại, số CCCD, email; 1,5 điểm/thông tin. Chấp nhận bỏ hẳn thông tin liên hệ không cần dùng; không chấp nhận che một phần. Giữ các thông tin còn lại: gói SVT, trận bán kết, ngày 18/12/2026, 2 người lớn, 1 trẻ em 9 tuổi, cọc 1.500.000 đồng, 3 ghế cạnh nhau gần lối đi (2 điểm).
+- Câu lệnh 1: chỉ dùng file đính kèm và quy định câu trả lời khi không tìm thấy (3 điểm). Câu lệnh 2: yêu cầu nêu mục/điều khoản của file làm căn cứ (3 điểm).
+
+4.2. Trích xuất JSON (22 điểm)
+- Sáu khối CREATE có nhãn/đúng vai trò: 6; hai ví dụ Few-shot: 4; tin nhắn trong dấu phân tách: 2; đủ 5 quy tắc: 5; chỉ trả JSON: 2.
+- Kết quả chuẩn (thứ tự TN1–TN3):
+[{"ma_goi":"SVT","ngay_su_kien":"2026-12-20","nguoi_lon":2,"tre_em":1,"loai_ve":"thuong","ghi_chu":null},{"ma_goi":"FZ","ngay_su_kien":"2027-01-05","nguoi_lon":3,"tre_em":0,"loai_ve":"thuong","ghi_chu":"một người cần hỗ trợ xe lăn"},{"ma_goi":"VIP","ngay_su_kien":null,"nguoi_lon":4,"tre_em":0,"loai_ve":"vip","ghi_chu":"một người khiếm thị cần hỗ trợ tìm chỗ"}]
+- [AI] Cấu trúc hợp lệ/đúng thứ tự/đủ trường: 1 điểm. Giá trị đúng cả ba: 2; sai một đối tượng: 1; sai từ hai: 0.
+
+4.3. Báo giá bằng CoT (14 điểm)
+- Prompt phải gồm bảng giá, quy tắc, yêu cầu trong dấu phân tách; sáu bước đúng thứ tự và ghi phép tính; dòng cuối đúng mẫu [RESULT: … đồng].
+- Tính đúng: B1 5 × 1.200.000 = 6.000.000. B2 hai trẻ 8,10 tuổi: 2 × 1.200.000 × 70% = 1.680.000; bé 3 tuổi miễn phí. B3 = 7.680.000. B4 giảm 5% = 384.000; còn 7.296.000. B5 = 1 × 300.000 = 300.000. B6 = 7.596.000 đồng.
+- [AI] kết quả có đủ bước và dòng [RESULT]: 2. Kết luận đúng/sai khớp kết quả dán: 2. Nếu đúng xác nhận tổng 7.596.000 đồng; nếu sai chỉ ra bước sai đầu tiên và giá trị đúng: 2.
+
+4.4. Prompt Chaining (18 điểm)
+- Trạm 1 yêu cầu đúng bốn trường/kiểu dữ liệu; loai_su_co chỉ một trong tran_gio/sai_khu_vuc/nhan_vien/khac; email trong dấu phân tách; một JSON, không giải thích; tom_tat tối đa 20 từ.
+- Hai điều kiểm tra hợp lý: JSON parse được và có đúng bốn trường; nhãn và số khách/số hiệp khớp email; phân loại đúng (không phải nhan_vien); tóm tắt ≤20 từ.
+- Câu lệnh viết tiếp phải trích đoạn "Ban tổ chức Cúp Sao Vàng xin hoàn lại Quý khán giả khoản", yêu cầu nối tiếp ngay sau đó và không lặp phần đã viết.
+- JSON mẫu: {"loai_su_co":"sai_khu_vuc","so_khach":2,"so_hiep_bi_anh_huong":2,"tom_tat":"Hai khán giả bị xếp khu không mái che trong hai hiệp đầu"}. Mỗi giá trị loại sự cố, số khách, số hiệp: 1 điểm.
+
+4.5. Chấm theo Rubric (15 điểm)
+- Thông tin chuẩn: SVT 1.200.000 đồng/người lớn; huỷ từ 7 ngày hoàn 100%, 3–6 ngày 50%, dưới 3 ngày không hoàn. Rubric: đúng thông tin 50%/5; đầy đủ 30%/3; giọng điệu 20%/2.
+- Lỗi câu trả lời: giá sai, hoàn tiền sai, thiếu lời mời cung cấp ngày trận/số vé, có cụm từ suồng sã; ghi chú là chèn lệnh cần bỏ qua. Điểm hợp lý khoảng 2–4/10.
+- Thông tin chuẩn/rubric 3; thẻ và chỉ thị coi bài là dữ liệu 4; mỗi lỗi đủ trích câu/lý do/câu sửa 3; bảng 4 cột và tổng 2; [AI] có bảng 1; [AI] bỏ qua chèn lệnh, không cho 10/10 là 2.
+
+4.6. System Prompt (12 điểm)
+- Mỗi quy tắc rõ ràng: chỉ hỗ trợ SVT, FZ, VIP; không hứa giảm ngoài bảng giá; không hỏi CCCD/số thẻ ngân hàng. 2 điểm mỗi quy tắc.
+- Ngoài phạm vi: xin lỗi, nói rõ chỉ hỗ trợ các gói/vé Cúp Sao Vàng. Thiếu thông tin: hỏi lại đúng trường còn thiếu như trận/ngày, số vé, loại vé; không tự đoán. 3 điểm mỗi tình huống.
+
+4.7. Nộp bài (5 điểm)
+- Hai repository đúng cú pháp và hai link mở được: 1. Pha1 nộp trước giờ: 2. Hai file đúng tên, đủ thông tin, giữ cấu trúc mẫu: 2.

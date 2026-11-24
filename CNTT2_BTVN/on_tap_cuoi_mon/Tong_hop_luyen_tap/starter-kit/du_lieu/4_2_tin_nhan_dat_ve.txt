@@ -1,0 +1,35 @@
+BẢNG MÃ GÓI
+SVT – Sân Vận Động: vé trận đấu
+FZ – Fan Zone: khu cổ vũ
+VIP – Khán đài VIP
+
+QUY TẮC CHUẨN HOÁ (5 quy tắc)
+1. ma_goi lấy theo bảng mã gói.
+2. ngay_su_kien dạng YYYY-MM-DD; tin nhắn không ghi năm thì lấy năm 2026; không có ngày cụ thể thì null.
+3. Khách không nhắc trẻ em thì tre_em là 0 và mọi khách là người lớn.
+4. loai_ve chỉ nhận "thuong", "vip" hoặc null.
+5. ghi_chu chỉ ghi yêu cầu đặc biệt về chỗ ngồi, hỗ trợ di chuyển hoặc ăn uống; không có thì null.
+
+======================================================
+HAI TIN NHẮN MẪU ĐÃ XỬ LÝ ĐÚNG (dùng làm ví dụ)
+======================================================
+
+Tin nhắn mẫu 1:
+Đặt giúp mình 2 vé VIP trận chung kết ngày 15/11/2026, 2 người lớn và 1 bé. Cần chỗ ngồi cạnh lối đi.
+Kết quả đúng:
+{"ma_goi": "VIP", "ngay_su_kien": "2026-11-15", "nguoi_lon": 2, "tre_em": 1, "loai_ve": "vip", "ghi_chu": "chỗ ngồi cạnh lối đi"}
+
+Tin nhắn mẫu 2:
+Cho mình một vé Fan Zone, ngày nào cũng được, mình đi một mình.
+Kết quả đúng:
+{"ma_goi": "FZ", "ngay_su_kien": null, "nguoi_lon": 1, "tre_em": 0, "loai_ve": "thuong", "ghi_chu": null}
+
+======================================================
+BA TIN NHẮN CẦN XỬ LÝ
+======================================================
+
+TN1: Mình muốn đặt gói Sân Vận Động trận tứ kết ngày 20/12 nha, 2 người lớn với 1 bé 8 tuổi, vé thường.
+
+TN2: Cho 3 người đi Fan Zone trận ngày 05/01/2027 ạ. Một người cần hỗ trợ xe lăn.
+
+TN3: Trận chung kết Cúp Sao Vàng tháng 12 còn vé không ạ? Nhà em 4 người lớn, có một người khiếm thị cần hỗ trợ tìm chỗ, lấy vé VIP.
